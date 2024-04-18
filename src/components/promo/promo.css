@@ -1,0 +1,11 @@
+.promo{
+    margin-bottom: 63px;
+    
+}
+
+.promo__content{
+    display: flex;
+
+   
+    justify-content: center;
+}

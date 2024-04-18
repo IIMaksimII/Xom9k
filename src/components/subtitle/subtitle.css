@@ -1,0 +1,29 @@
+
+
+.subtitle {
+    padding: 65px 0 50px;
+}
+
+.subtitle_row{
+    display: flex;
+    justify-content: center;
+}
+
+
+.subtitle_nav{
+    
+    color: var(--black);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+}
+
+.subtitle_nav ul{
+    display: flex;
+    column-gap: 30px;
+}
+
+
+
+

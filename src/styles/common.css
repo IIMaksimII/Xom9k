@@ -1,0 +1,21 @@
+
+:root{
+    --textColor: #ffffff;
+    --red: #ED1331;
+    --black: #000;
+ 
+}
+
+
+body{
+    font-family: "Montserrat", sans-serif ;
+    color: var(--textColor);
+}
+
+
+.container {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 0 30px;
+
+}
