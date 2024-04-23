@@ -13,7 +13,19 @@ const initiatState = {
 export const userSlice = createSlice({
     name: 'user',
     initiatState,
-    reducers:{
+    reducers:{ 
+        usersFetching(state){
+            state.isLoading = true;
+            state.error = ''
+            state.user = action.payload;
+        },
+        usersFetchingSuccess(state){
+            state.isLoading = false;
+        },
+        usersFetchingError(state){
+            state.isLoading = false;
+            state.error = action.payload
+        },
 
     }
 })

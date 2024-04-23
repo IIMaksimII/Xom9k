@@ -1,0 +1,19 @@
+.heed{
+    column-gap: 103px;
+}
+
+.post_list{
+    padding: 46px 0 15px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.post_list span{
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background-color: #000;
+}
