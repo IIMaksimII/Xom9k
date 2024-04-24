@@ -5,7 +5,7 @@
 
 .promo__content{
     display: flex;
-
-   
+    
+    padding: 50px 0px;
     justify-content: center;
 }

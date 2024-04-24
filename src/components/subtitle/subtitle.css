@@ -1,74 +1,72 @@
 
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.dropdown {
-    padding: 2px 0 21px;
-    display: flex;
-    justify-content: center;
-  }
-  
   .dropdown-button {
-    padding: 0px 50px;
+    position: absolute;
+    
     cursor: pointer;
+   
     color: var(--black);
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.01em;
+   
   }
 
   
   .dropdown-menu {
+    list-style: none;
+    padding: 0;
+    width: 320px; /* Ширина списка */
     
-    margin-top: 30px;
+    margin-top: 1px;
     position: absolute;
-    background-color: #c1bdbd;
+
+    background-color: #d3caca;
     z-index: 1;
-    min-width: 360px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
     color: var(--black);
   }
   
   .dropdown-menu li {
+
     cursor: pointer;
     font-size: 14px;
     color: var(--black);
     font-weight: 500;
-    font-size: 14px;
+    
     line-height: 1.5;
     letter-spacing: 0.01em;
+
+    padding: 3px 20px;
   }
   
   .dropdown-menu li:hover {  
     background-color: #dedbdb;
+    
+  }
+
+  .buttons {
+    margin-bottom: 1px;
+    
+  }
+  
+  .buttons button {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+
+    
+    padding: 20px 16px;
+    font-size: 16px;
+
+    cursor: pointer;
   }
 
 
-
-
-
-/*.subtitle {
-    padding: 1px 0 21px;
-}
-
-.subtitle_row{
-    display: flex;
-    justify-content: center;
-}
-
-
-.subtitle_nav{
-    
-    color: var(--black);
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.5;
-    letter-spacing: 0.01em;
-}
-
-.subtitle_nav ul{
-    display: flex;
-    column-gap: 30px;
-}*/
 
 
 
