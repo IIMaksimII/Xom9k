@@ -1,32 +1,23 @@
 
 import { createSlice } from "@reduxjs/toolkit";
-import {IUser} from "../../models/IUser";
-
-
-
 
 const initiatState = {
-    users: [],
+    currentCategory: 0,
+    categories: {
+        women: {text: 'women', id: 0},
+        mans: {text: 'man', id: 1},
+        kids: {text: 'kid', id: 2},
+    },
     isLoading: false
 }
 
-export const userSlice = createSlice({
+const userSlice = createSlice({
     name: 'user',
     initiatState,
-    reducers:{ 
-        usersFetching(state){
-            state.isLoading = true;
-            state.error = ''
-            state.user = action.payload;
-        },
-        usersFetchingSuccess(state){
-            state.isLoading = false;
-        },
-        usersFetchingError(state){
-            state.isLoading = false;
-            state.error = action.payload
-        },
-
+    reducers: { 
+        changeCurrentCategory(state, action) {
+            state.currentCategory = action.payload
+        }
     }
 })
 

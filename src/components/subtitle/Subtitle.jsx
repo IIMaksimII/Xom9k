@@ -1,39 +1,51 @@
 
+import { useSelector } from 'react-redux';
 import  './subtitle.css'
 
 import React, { useState } from 'react';
 
-
 function Subtitle() {
     const [isOpen, setIsOpen] = useState(false);
     const toggleOpen = () => setIsOpen(!isOpen);
-  
-    return (
+
+    const currentCategory = useSelector(state => state.rootReducer.uiSlice.currentCategory)
+
+    const renderComp = () => {
+    if (currentCategory === 0) {
+      return(
+        <ul className="dropdown-menu">
+            <li>Балетки</li>
+            <li>Ботильоны</li>
+            <li>Ботинки</li>
+            {/* Добавьте дополнительные пункты меню здесь */}
+          </ul>
+      );
+    }
+    else if (currentCategory === 1) {
+      return(
+        <ul className="dropdown-menu">
+            <li>Куртки</li>
+            <li>Ботинки</li>
+            <li>Кроссовки</li>
+            {/* Добавьте дополнительные пункты меню здесь */}
+          </ul>
+      )
+    }
+    else if (currentCategory === 2) {}
+    }
+
+    return ( 
       <div className="dropdown">
         <button className="dropdown-button" onClick={toggleOpen}>
           Одежда
         </button>
         
         {isOpen && (
-          <ul className="dropdown-menu">
-            <li>Балетки</li>
-            <li>Ботильоны</li>
-            <li>Ботинки</li>
-            {/* Добавьте дополнительные пункты меню здесь */}
-          </ul>
+          renderComp()
         )}
-        
-       
       </div>
     );
-  }
-
-
-
-
-
-
-  
+  }  
 /*const Subtitle = () => {
     return ( <section className= "subtitle">
     <div className="container_sub">

@@ -2,6 +2,7 @@
     padding: 46px 0 15px;
 }
 
+  
 .header_row{
     display: flex;
     column-gap: 30px;
@@ -25,7 +26,7 @@
    
 }
 
-.header_nav{
+.header_nav button{
     font-weight: 600;
     font-size: 22px;
     line-height: 1.5;
@@ -33,15 +34,10 @@
 }
 
 .header_nav ul{
+    font-weight: 900;
     display: flex;
     column-gap: 30px;
     align-items: center;
-   
-}
-
-.header_nav a{
-    color: var(--textColor);
-    
 }
 
 
@@ -59,11 +55,23 @@
 }
 
 .header_user ul{
+
     display: flex;
     column-gap: 20px;
     align-items: center;
+
     
 }
+
+.img{
+    width: 100%;
+  height: 100%;
+  transition: filter 0.3s ease;
+}
+.img:hover{
+    filter: grayscale(100%) brightness(50%)
+}
+
 
 
 

@@ -9,8 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <PostContainer/>
-      <PostContainerMen/>
+     
       <Header/>
       <Subtitle/>
       <Promo/>
