@@ -1,4 +1,4 @@
-import logoImg from './../../main_menu/header/logo.png'
+
 
 import userImg from './../../main_menu/header/user.png'
 import lickedImg from './../../main_menu/header/liked.png'
@@ -27,7 +27,6 @@ function Header (){
          <div className="container_hed">
             <div className="header_row">
                 <div className="header_logo">
-                    <img src={logoImg} alt='Logo'/>
                     <span>Logo</span>
                 </div>
                 <div className="header_nav">
