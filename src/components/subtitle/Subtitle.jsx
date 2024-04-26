@@ -14,7 +14,8 @@ function Subtitle() {
     const currentCategory = useSelector(state => state.rootReducer.uiSlice.currentCategory)
     const [selectedCategory, setSelectedCategory] = useState(null);
     const [isOpen, setIsOpen] = useState(false);
-    
+
+
     const renderComp = () => {
       
         
@@ -27,7 +28,7 @@ function Subtitle() {
         <div className="centered-container">
           <div className="container">
             <div className="column">
-              <ul className="category-list">
+              <ul className="category-list" >
                 <li><a href="/all-clothing">Вся оджеда</a></li>
                 <li><a href="/t-shirts">• Блузы и рубашки</a></li>
                 <li><a href="/hoodies">• Брюки</a></li>
@@ -295,7 +296,7 @@ function Subtitle() {
         <div className="center-container">
         <div className="dropdown-button">
           <div className="buttons">
-            <button onClick={() => { setSelectedCategory('clothing'); toggleOpen(); }}>Одежда</button>
+          <button onClick={() => { setSelectedCategory('clothing'); toggleOpen(); }}>Одежда</button>
             <button onClick={() => { setSelectedCategory('shoes'); toggleOpen(); }}>Обувь</button>
             <button onClick={() => { setSelectedCategory('accessories'); toggleOpen(); }}>Аксессуары</button>
           </div >

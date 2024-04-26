@@ -13,40 +13,38 @@ import { changeCurrentCategory } from '../../store/reducers/uiSlice';
 function Header (){
     const [isOpen, setIsOpen] = useState(false);
     const toggleOpen = () => setIsOpen(!isOpen);
+    
+    const [activeButton, setActiveButton] = useState(null);
 
     const categorise = useSelector(state => state.rootReducer.uiSlice.categories)
     const dispatch = useDispatch()
-
     const handleClick = (el) => {
-        toggleOpen()
+        setActiveButton(el.id);
+        dispatch(changeCurrentCategory(el.id));
+      };
 
-        dispatch(changeCurrentCategory(el.id))
-    }
 
+    
     return <header className="header">
          <div className="container_hed">
             <div className="header_row">
                 <div className="header_logo">
+                    <button className='bt-logo' onClick={null}> 
                     <span>Logo</span>
+                    </button>
                 </div>
                 <div className="header_nav">
                     <ul>
-                        {categorise.map(el => {
-                            return(
-                                <button className="bt" onClick={() => handleClick(el)}>
-                                    {el.text}
-                                </button>
-                            );
-                        })}
-                        {/* <button className="bt1" onClick={toggleOpen}>
-                                Женская
-                        </button>
-                        <button className="bt2" onClick={toggleOpen}>
-                                Мужская
-                        </button>
-                        <button className="bt3" onClick={toggleOpen}>
-                                Детская
-                        </button> */}
+                    {categorise.map(el => (
+                <li key={el.id}>
+                  <button 
+                    className={`bt ${activeButton === el.id ? 'active' : ''}`} 
+                    onClick={() => handleClick(el)}
+                  >
+                    {el.text}
+                  </button>
+                </li>
+              ))}
                     </ul>
                 </div>
                 <user className="header_user">
