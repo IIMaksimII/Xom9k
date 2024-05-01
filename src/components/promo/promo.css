@@ -8,4 +8,60 @@
     
     padding: 50px 0px;
     justify-content: center;
+    position: relative;
 }
+
+  .container_pr {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  
+  
+  .promo_img {
+    position: relative;
+    overflow: hidden;
+    
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    
+  }
+  
+  @keyframes slideLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+    
+  }
+  
+  .slider-controls {
+    position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 1;
+  }
+  
+  .slider-controls button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(65, 63, 63, 0.5);
+    transition: background-color 0.3s ease;
+  }
+  
+  .slider-controls button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+ 
+  
+ 

@@ -1,0 +1,66 @@
+.dark-footer {
+    background-color: #151517; /* Цвет фона темного футера */
+    color: #fff; /* Цвет текста */
+    padding: 20px; /* Внутренние отступы */
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравниваем по центру по горизонтали */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center; /* Выравниваем по центру по горизонтали */
+  }
+  
+  .column {
+    flex: 1;
+    margin: 0 10px; /* Отступы между контейнерами */
+  }
+  
+ 
+  
+  .horizontal-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Выравниваем по центру по вертикали */
+    margin-top: 20px; /* Отступ сверху для горизонтальных контейнеров */
+    
+  }
+  
+  .horizontal-container .social-media span{
+    margin-right: 40px; /* Отступ между элементами */
+    
+  }
+  .horizontal-container .payment-systems span{
+    margin-right: 10px; /* Отступ между элементами */
+  }
+  
+  .horizontal-container .social-media span:hover,
+  .horizontal-container .payment-systems span:hover {
+    color: yellow; /* Цвет текста при наведении */
+    
+  }
+  
+  hr {
+    border: none; /* Убираем границу */
+    border-top: 1px solid #fff; /* Добавляем линию */
+    margin-top: 600px; /* Отступ сверху */
+    width: 100%; /* Ширина линии на всю ширину контейнера */
+  }
+
+  .horizontal-container {
+    margin-top: 20px; /* Отступ между контейнерами */
+  }
+  
+  /* Дополнительные стили для примера */
+  .social-media {
+    display: inline-block; /* Размещаем элементы в строку */
+    margin-right: 200px; /* Отступ между элементами */
+  }
+  
+  .payment-systems {
+    display: inline-block; /* Размещаем элементы в строку */
+  }
+  
+  

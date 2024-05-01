@@ -44,29 +44,33 @@ function Header (){
                     {el.text}
                   </button>
                 </li>
-              ))}
+                        )
+                      )
+                    }
                     </ul>
                 </div>
+                  
+      
+
                 <user className="header_user">
-                    <ul >
-                        
+                <div className='input-wrapper'>
+                    <input className='input' tupe="text" placeholder='Поиск'></input>
+                    <svg viewBox='0 0 24 24'></svg>
+                  </div>
                         <button className="button" onClick={toggleOpen}>
                             <img src={userImg} alt='User' className='img' />
                         </button>
-                        <button className="button2" onClick={toggleOpen}>
+                        <button className="button" onClick={toggleOpen}>
                             <img src={lickedImg} alt='Licked' className='img'/>
                         </button>
-                        <button className="button3" onClick={toggleOpen}>
+                        <button className="button" onClick={toggleOpen}>
                         <img src={bagImg} alt='Bag' className='img'/>
                         </button>
-                    
-                    </ul>
                 </user>
             </div>
          </div>
       </header>;
 
 }
-
 
 export default Header;

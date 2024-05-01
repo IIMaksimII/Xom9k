@@ -1,11 +1,10 @@
 .header{
-    padding: 46px 0 15px;
+    padding: 30px 0 15px;
 }
 
   
 .header_row{
     display: flex;
-    column-gap: 30px;
     align-items: center;
     justify-content: space-between;
 }
@@ -13,12 +12,9 @@
 .header_logo{
     display: flex;
     align-items: center;
-    column-gap: 13px;
     padding-left: 10px;
 }
 .bt {
-    background: none;
-    border: none;
     padding: 5px 10px;
     color: white;
     cursor: pointer;
@@ -34,6 +30,7 @@
     line-height: 1.5;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    
    
 }
 
@@ -45,10 +42,10 @@
 }
 
 .header_nav ul{
+    padding-left: 140px;
     font-weight: 900;
     display: flex;
     column-gap: 30px;
-    align-items: center;
 }
 
 
@@ -57,31 +54,59 @@
 }
 
 .header_user{
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 1.5;
-    letter-spacing: 0.01em;
-    align-items: center;
-    padding-right: 30px;
-}
-
-.header_user ul{
-
+    padding: 5px 10px;
     display: flex;
-    column-gap: 20px;
-    align-items: center;
-
-    
+    gap: 10px; 
 }
+.button {
+    padding-right: 10px;
+    cursor: pointer;
+  }
 
 .img{
-    width: 100%;
-  height: 100%;
+    
+  width: 20px;
+  height: 20px;
   transition: filter 0.3s ease;
 }
 .img:hover{
     filter: grayscale(100%) brightness(50%)
 }
+.input-wrapper{
+    width: 100%;
+    max-width: 200px;
+    background: hsl(231, 14%, 10%);
+    border: 2px solid #2b2c37;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.35s ease-out;
+  }
+  
+  .input{
+    font-size: 12px;
+    padding: 10px;
+  }
+  .input::placeholder{
+    color: #727884;
+  }
+  .input-wrapper:has(input:focus){
+    border: 2px solid #de55de;
+    box-shadow: 0 0 120px hsl(300 67% 60% /0.5);
+  }
+  .input-wrapper > svg{
+    position: absolute;
+    right: 1rem;
+    width: 28px;
+    flex-shrink: 0;
+    transition: 0.25s;
+  }
+  .input:focus + svg> path{
+    stroke: none;
+    fill: #ec83bb;
+  }
+  .input:focus + svg{
+    scale: 1.2;
+  }
 
 
 

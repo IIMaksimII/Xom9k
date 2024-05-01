@@ -12,7 +12,7 @@
 }
 
 .buttons {
-  margin-bottom: 1px;
+  margin-bottom: 10px;
 }
   
 .buttons button {
@@ -29,19 +29,19 @@
 .centered-container {
   display: flex;
   justify-content: center; 
-
+  
 }
 
 .container {
   display: flex;
- 
+  justify-content: center; 
   grid-template-columns: repeat(2, 1fr);
-  gap: 140px;
-  width: 720px; /* Ширина списка */
+  gap: 110px;
+  width: 850px; 
   
   position: absolute;
 
-  background-color: #e7dede;
+  background-color: #e9e3e3;
   z-index: 1;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
@@ -55,7 +55,7 @@
   letter-spacing: 0.01em;
 
   padding: 20px;
-  border: 1px solid #e7dede;
+  border: 1px solid #e9e3e3;
 }
 .category-list,
 .brand-list,
@@ -67,8 +67,9 @@
 
 .category-list li,
 .brand-list li,
-.accessories-list {
+.accessories-list li {
   margin-bottom: 6px;
+  
 }
 
 .category-list a,
@@ -81,9 +82,12 @@
 .category-list a:hover,
 .brand-list a:hover,
 .accessories-list a:hover {
-  font-weight: 700;
+  font-weight: 900;
   color: rgb(3, 3, 3);
 }
+
+
+ 
 
 
 
