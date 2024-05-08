@@ -15,16 +15,16 @@ function Subtitle() {
     const [selectedCategory, setSelectedCategory] = useState(null);
     const [isOpen, setIsOpen] = useState(false);
 
-    
-    
+
     const renderComp = () => {
+      
+        
       
     if (currentCategory === 0) {
       switch (selectedCategory) {
         
         case 'clothing':
         return (
-          
         <div className="centered-container">
           <div className="container">
             <div className="column">
@@ -50,7 +50,6 @@ function Subtitle() {
           </div>
         </div>
         );
-        
       case 'shoes':
         return (
           <div className="centered-container">
@@ -204,7 +203,7 @@ function Subtitle() {
           <div className="container">
             <div className="column">
               <ul className="category-list">
-                <li><a href="/all-clothing">Одежда</a></li>
+                <li><a href="/all-clothing">Вся оджеда</a></li>
                 <li><a href="/t-shirts">• Блузы и рубашки</a></li>
                 <li><a href="/hoodies">• Брюки</a></li>
                 <li><a href="/t-shirts">• Джемперы и кардиганы</a></li>
@@ -215,23 +214,23 @@ function Subtitle() {
             </div>
             <div className="column">
                 <ul className="brand-list">
-                <li><a href="/brand">Обувь</a></li>
-                <li><a href="/nike">• Балетки</a></li>
-                <li><a href="/puma">• Ботинки</a></li>
-                <li><a href="/nike">• Кросовки</a></li>
-                <li><a href="/puma">• Туфли</a></li>
+                <li><a href="/brand">Все бренды</a></li>
+                <li><a href="/nike">• Nike</a></li>
+                <li><a href="/puma">• Puma</a></li>
+                <li><a href="/nike">• Adidas</a></li>
+                <li><a href="/puma">• Reebok</a></li>
               </ul>
             </div>
             <div className="column">
               <ul className="accessories-list">
-                <li><a href="/bags">• Аксессуары</a></li>
+                <li><a href="/bags">• Сумки</a></li>
                 <li><a href="/hats">• Головные уборы</a></li>
                 <li><a href="/scarves">• Шарфы</a></li>
-                <li><a href="/scarves">• Зонты</a></li>
-                <li><a href="/scarves">• Рюкзаки</a></li>
               </ul>
             </div>
           </div>
+          
+           
         </div>
         );
       case 'boys':
@@ -239,31 +238,22 @@ function Subtitle() {
           <div className="centered-container">
           <div className="container">
             <div className="column">
-            <ul className="category-list">
-                <li><a href="/all-clothing">Одежда</a></li>
-                <li><a href="/hoodies">• Брюки</a></li>
-                <li><a href="/t-shirts">• Джемперы и кардиганы</a></li>
-                <li><a href="/hoodies">• Джинсы</a></li>
-                <li><a href="/t-shirts">• Футболки и поло</a></li>
-                <li><a href="/hoodies">• Худи и свитшоты</a></li>
+              <ul className="category-list">
+                <li><a href="/all-clothing">Вся обувь</a></li>
+                <li><a href="/t-shirts">• Балетки</a></li>
+                <li><a href="/hoodies">• Ботинки</a></li>
+                <li><a href="/t-shirts">• Кроссовки и кеды</a></li>
+                <li><a href="/hoodies">• Туфли</a></li>
+                <li><a href="/t-shirts">• Угги и унты</a></li>
               </ul>
             </div>
             <div className="column">
                 <ul className="brand-list">
-                <li><a href="/brand">Обувь</a></li>
-                <li><a href="/nike">• Туфли</a></li>
-                <li><a href="/puma">• Ботинки</a></li>
-                <li><a href="/nike">• Кросовки</a></li>
-                <li><a href="/puma">• Резиновая обувь</a></li>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="accessories-list">
-                <li><a href="/bags">• Аксессуары</a></li>
-                <li><a href="/hats">• Головные уборы</a></li>
-                <li><a href="/scarves">• Шарфы</a></li>
-                <li><a href="/scarves">• Зонты</a></li>
-                <li><a href="/scarves">• Рюкзаки</a></li>
+                <li><a href="/brand">Все бренды</a></li>
+                <li><a href="/nike">• Nike</a></li>
+                <li><a href="/puma">• Puma</a></li>
+                <li><a href="/nike">• Adidas</a></li>
+                <li><a href="/puma">• Reebok</a></li>
               </ul>
             </div>
           </div>
@@ -274,19 +264,22 @@ function Subtitle() {
           <div className="centered-container">
           <div className="container">
             <div className="column">
-            <ul className="category-list">
-                <li><a href="/all-clothing">Одежда</a></li>
-                <li><a href="/t-shirts">• Боди</a></li>
-                <li><a href="/hoodies">• Брюки, шорты</a></li>
-                <li><a href="/t-shirts">• Джемперы и кардиганы</a></li>
-                <li><a href="/hoodies">• Комбинезоны</a></li>
-                <li><a href="/hoodies">• Платья</a></li>
+              <ul className="category-list">
+                <li><a href="/all-clothing">Все аксессуары</a></li>
+                <li><a href="/t-shirts">• Головные уборы</a></li>
+                <li><a href="/hoodies">• Зонты</a></li>
+                <li><a href="/t-shirts">• Кошельки и визитницы</a></li>
+                <li><a href="/hoodies">• Очки</a></li>
+                <li><a href="/t-shirts">• Рюкзаки</a></li>
               </ul>
             </div>
             <div className="column">
                 <ul className="brand-list">
-                <li><a href="/brand">Обувь</a></li>
-                <li><a href="/nike">Аксессуары</a></li>
+                <li><a href="/brand">Все бренды</a></li>
+                <li><a href="/nike">• Guess</a></li>
+                <li><a href="/puma">• David Jones</a></li>
+                <li><a href="/nike">• Labbra</a></li>
+                <li><a href="/puma">• Tommi Hilfiger</a></li>
               </ul>
             </div>
           </div>
@@ -296,28 +289,23 @@ function Subtitle() {
         return null;
       }
     }
-    
   }
 
     if (currentCategory === 0){
       return (
-        
         <div className="center-container">
         <div className="dropdown-button">
           <div className="buttons">
           <button onClick={() => { setSelectedCategory('clothing'); toggleOpen(); }}>Одежда</button>
             <button onClick={() => { setSelectedCategory('shoes'); toggleOpen(); }}>Обувь</button>
             <button onClick={() => { setSelectedCategory('accessories'); toggleOpen(); }}>Аксессуары</button>
-            
           </div >
-          
         
           {isOpen && (
             renderComp()
           )}
           </div>
         </div>
-        
       );
     }
     else if (currentCategory === 1){
@@ -346,15 +334,14 @@ function Subtitle() {
             <button onClick={() => { setSelectedCategory('boys'); toggleOpen(); }}>Мальчикам</button>
             <button onClick={() => { setSelectedCategory('kids'); toggleOpen(); }}>Малышам</button>
           </div >
-          
+
           {isOpen && (
             renderComp()
           )}
           </div>
         </div>
-      ); 
+      );
     }
-   
   }
   
   export default Subtitle;
